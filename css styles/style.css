@@ -333,6 +333,21 @@ body {
   color: white;
 }
 
+.footer-nav a:hover {
+  color: royalblue;
+}
+
+.footer-nav::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px royalblue;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.footer-nav:hover::after {
+  transform: scaleX(0.9);
+}
 .social {
   display: flex;
   justify-content: center;
